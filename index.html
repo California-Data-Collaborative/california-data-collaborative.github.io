@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CADC Protocol website</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/scrolling-nav.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -17,8 +18,8 @@
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active" role="presentation"><a href="#">Data Sharing</a></li>
-                    <li role="presentation"><a href="#">Quality Control</a></li>
+                    <li role="presentation"><a href="#data-sharing" class="page-scroll">Data Sharing</a></li>
+                    <li role="presentation"><a href="#quality-control" class="page-scroll">Quality Control</a></li>
                     <li role="presentation"><a href="#">Public Access</a></li>
                     <li role="presentation"><a href="#">Open Source Platforms</a></li>
                     <li role="presentation"><a href="#">Tools </a></li>
@@ -33,12 +34,23 @@
             <p><a class="btn btn-default" role="button" href="#">Learn more</a></p>
         </div>
     </div>
-    <div class="container">
-        <h1>Heading</h1>
-        <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. </p>
+    <div class="container" id="data-sharing">
+        <h1>Data Sharing</h1>
+        <p>This repository documents the&nbsp;Open Water Rate Specification (OWRS), a machine-readable format for specifying and sharing water rate information.OWRS is designed for analysts, economists, and software developers interested in analyzing water
+            rates. OWRS attempts to fully encode a water utility's rate structure and pricing schedules in a form that is easy to store, share, modify and apply programmatically.</p>
+    </div>
+    <div class="container" id="quality-control">
+        <h1>Quality Control</h1>
+        <p>The yaml file format works by specifying a series of keys and values. In the example above,&nbsp;bill_frequency is a key and&nbsp;monthly is the value corresponding to that key. This key-value pair is itself a value of the&nbsp;metadata key.metadata
+            is used to specify information about the rate structure that is not actualy used to calculate bills, such as the name of the utility and the date the rate structure went into effect.rate_structure specifies information that is actually used
+            for calculating water bills. The values of the&nbsp;rate_structure key are the customer classes used to define rates. In our examples we use the standard classes defined by the CaDC:&nbsp;RESIDENTIAL_SINGLE, RESIDENTIAL_MULTI, IRRIGATION,
+            COMMERCIAL, INDUSTRIAL, and&nbsp;INSTITUTIONAL.In Example 1 above, we see a rate structure defined only for single-family residential customers, where the commodity charge is calculated as&nbsp;flat_rate*usage_ccf where&nbsp;flat_rate is 2.1,
+            so the whole expression represents $2.1 per CCF of water used. In this case&nbsp;usage_ccf is the data column name used to represent water usage. The total bill (bill) for each customer is then equal to just the commodity charge. </p>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
 </body>
 
 </html>
