@@ -1,0 +1,15 @@
+#promo {
+  text-align:center;
+  padding:40px;
+  background-image:url(../../assets/img/irrigation_areas_cropped_2.jpg);
+  background-size:cover;
+}
+
+#promo .jumbotron {
+  border-radius:20px;
+  padding:40px;
+  background-color:rgba(0,0,0,0.20);
+  /*max-width:800px;*/
+  margin:auto;
+}
+
