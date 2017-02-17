@@ -1,1 +1,1 @@
-# [california-data-collaborative.github.io](www.california-data-collaborative.github.io)
+# [california-data-collaborative.github.io](http://california-data-collaborative.github.io)
