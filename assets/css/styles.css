@@ -6,8 +6,10 @@
 }
 
 .protocol-stubs {
-  text-align:center;
-  padding:40px;
+  text-align:left;
+  padding:15px;
+  /*max-width:500px;*/
+  /*font-size:14px;*/
   background-size:cover;
 }
 
@@ -34,7 +36,7 @@
   box-shadow:0 1px 2px rgba(0,0,0,.075);
   padding:40px;
   background-color:rgba(0,0,0,0);
-  /*max-width:800px;*/
+  max-width:800px;
   margin:auto;
 }
 
