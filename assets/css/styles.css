@@ -40,3 +40,19 @@
   margin:auto;
 }
 
+.action-button {
+  background:#66d7d7;
+}
+
+.action-button1 {
+  background:#9ea3a4;
+  border-radius:20px;
+  color:#fff;
+  box-shadow:none;
+  border:none;
+  text-shadow:none;
+  padding:10px 22px;
+  transition:background-color 0.25s;
+  align-content:center;
+}
+
